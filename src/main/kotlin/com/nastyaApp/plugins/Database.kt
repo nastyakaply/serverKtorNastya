@@ -7,10 +7,10 @@ import org.jetbrains.exposed.sql.addLogger
 import org.jetbrains.exposed.sql.transactions.transaction
 
 fun Application.configureDatabases() {
-    val database = Database.connect("jdbc:postgresql://localhost:5432/nastyaapp", // TODO nameDB
+    val database = Database.connect("jdbc:postgresql://localhost:5432/comfort",
         driver = "org.postgresql.Driver",
         user = "postgres",
-        password = "password" // TODO password
+        password = "1469"
     )
 
     transaction {

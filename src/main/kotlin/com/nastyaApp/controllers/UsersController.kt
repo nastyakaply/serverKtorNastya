@@ -11,9 +11,9 @@ object UsersController {
 
     //TODO add avatar img
     private object UsersTable : UUIDTable(name = "users") {
-        val name: Column<String> = varchar("name", 10)
-        val login: Column<String> = varchar("login", 10)
-        val password: Column<String> = varchar("password", 10)
+        val name: Column<String> = text("name")
+        val login: Column<String> = text("login")
+        val password: Column<String> = text("password")
     }
 
     private const val USERS_LIMIT = 20 // TODO for pagination
